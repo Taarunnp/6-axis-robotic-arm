@@ -1,0 +1,61 @@
+#include <ESP8266WiFi.h>
+#include <Servo.h>
+
+// Create servo objects
+Servo servo1, servo2, servo3, servo4, servo5, servo6;
+
+// Define GPIO numbers for servos (not D-pins)
+const int servoPin1 = 5;   // GPIO5 (was D1)
+const int servoPin2 = 4;   // GPIO4 (was D2)
+const int servoPin3 = 14;  // GPIO14 (was D5)
+const int servoPin4 = 12;  // GPIO12 (was D6)
+const int servoPin5 = 13;  // GPIO13 (was D7)
+const int servoPin6 = 15;  // GPIO15 (was D8)
+
+void setup() {
+  Serial.begin(115200);
+  Serial.println("ESP8266 6-Servo Controller Started");
+  
+  // Attach servos to their pins
+  servo1.attach(servoPin1);
+  servo2.attach(servoPin2);
+  servo3.attach(servoPin3);
+  servo4.attach(servoPin4);
+  servo5.attach(servoPin5);
+  servo6.attach(servoPin6);
+  
+  // Move all servos to initial position (90 degrees)
+  setAllServos(90);
+  delay(1000);
+}
+
+void loop() {
+  // Synchronized sweep
+  synchronizedSweep();
+  delay(1000);
+}
+
+void setAllServos(int angle) {
+  servo1.write(angle);
+  servo2.write(angle);
+  servo3.write(angle);
+  servo4.write(angle);
+  servo5.write(angle);
+  servo6.write(angle);
+}
+
+void synchronizedSweep() {
+  Serial.println("Synchronized Sweep");
+  
+  // Sweep from 0 to 180 degrees
+  for (int pos = 0; pos <= 180; pos += 1) {
+    setAllServos(pos);
+    delay(15);
+  }
+  
+  // Sweep back from 180 to 0 degrees
+  for (int pos = 180; pos >= 0; pos -= 1) {
+    setAllServos(pos);
+    delay(15);
+  }
+}
