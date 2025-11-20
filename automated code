@@ -2,7 +2,7 @@
 #include <Servo.h>        
       
 // Create servo objects             
-Servo servo1, servo2, servo3, servo4, servo5, servo6;                 
+Servo servo1, servo2, servo3, servo4, servo5, servo6;                  
          
 // Define GPIO numbers for servos (not D-pins)           
 const int servoPin1 = 5;   // GPIO5 (was D1)             
