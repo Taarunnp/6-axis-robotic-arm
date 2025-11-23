@@ -19,7 +19,7 @@ void setup() {
   // Attach servos to their pins 
   servo1.attach(servoPin1);
   servo2.attach(servoPin2);
-  servo3.attach(servoPin3);
+  servo3.attach(servoPin3); 
   servo4.attach(servoPin4);
   servo5.attach(servoPin5);
   servo6.attach(servoPin6);
