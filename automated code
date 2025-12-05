@@ -37,7 +37,7 @@ void loop() {
 
 void setAllServos(int angle) {
   servo1.write(angle);
-  servo2.write(angle);
+  servo2.write(angle); 
   servo3.write(angle);
   servo4.write(angle);
   servo5.write(angle);
