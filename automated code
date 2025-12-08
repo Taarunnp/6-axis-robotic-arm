@@ -8,7 +8,7 @@ Servo servo1, servo2, servo3, servo4, servo5, servo6;
 const int servoPin1 = 5;   // GPIO5 (was D1)               
 const int servoPin2 = 4;   // GPIO4 (was D2)           
 const int servoPin3 = 14;  // GPIO14 (was D5)          
-const int servoPin4 = 12;  // GPIO12 (was D6)     
+const int servoPin4 = 12;  // GPIO12 (was D6)      
 const int servoPin5 = 13;  // GPIO13 (was D7) 
 const int servoPin6 = 15;  // GPIO15 (was D8)    
 
