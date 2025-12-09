@@ -1,6 +1,6 @@
 #include       
          
-Servo servo_0; // Declaration of object to control the first servo       x
+Servo servo_0; // Declaration of object to control the first servo       
 Servo servo_1; // Declaration of object to control the second servo              
 Servo servo_2; // Declaration of object to control the third servo     
 Servo servo_3; // Declaration of object to control the fourth servo           
