@@ -1,6 +1,6 @@
 #include <ESP8266WiFi.h>
 #include <Servo.h>                     
-                     
+                      
 // Create servo objects                                
 Servo servo1, servo2, servo3, servo4, servo5, servo6;                                              
                                    
