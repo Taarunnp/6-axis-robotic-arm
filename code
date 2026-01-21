@@ -14,7 +14,7 @@ void setup() {
   servo_2.attach(4); // Associate servo_2 to pin 4
   servo_3.attach(5); // Associate servo_3 to pin 5
   servo_4.attach(6); // Associate servo_4 to pin 6
-  servo_5.attach(7); // Associate servo_5 to pin 7
+  servo_5.attach(7); // Associate servo_5 to pin 7 
   servo_6.attach(8); // Associate servo_6 to pin 8
 }
 
