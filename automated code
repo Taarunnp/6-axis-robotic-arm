@@ -16,7 +16,7 @@ void setup() {
   Serial.begin(115200);   
   Serial.println("ESP8266 6-Servo Controller Started");
    
-  // Attach servos to their pins 
+  // Attach servos to their pins  
   servo1.attach(servoPin1); 
   servo2.attach(servoPin2);
   servo3.attach(servoPin3);  
