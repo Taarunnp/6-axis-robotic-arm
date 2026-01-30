@@ -6,7 +6,7 @@ Servo servo_2; // Declaration of object to control the third servo
 Servo servo_3; // Declaration of object to control the fourth servo              
 Servo servo_4; // Declaration of object to control the fifth servo             
 Servo servo_6; // Declaration of object to control the seventh servo (not used in this project)   
-       
+        
 void setup() {   
   Serial.begin(9600); // Initialize serial communication  
   servo_0.attach(2); // Associate servo_0 to pin 2  
